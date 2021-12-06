@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <link href="css/style.css" rel="stylesheet">
+    <script defer src="js/script.js"></script>
+</head>
+
+<body>
+    <table class="main-layout">
+        <tr>
+            <td>
+                <div class="header-div">
+                    <table>
+                        <tr>
+                            <td>
+                                <h1 class="header1">Jakub Szczechowicz</h1>
+                                <br>
+                                <img width=200 height="200" src="images/1556630207078.jpeg" alt="Artystyczna śpiączka">
+                                <br>
+                                <h2>Quality Assurance Engineer</h2>
+                            </td>
+                        </tr>
+                    </table>
+                <form>
+                    <label>Powiększ, lub pomniejsz czcionkę!</label>
+                    <input type="button" value="-" class="smaller-font" onclick="smaller()">
+                    <input type="button" value="+" class="bigger-font" onclick="bigger()">
+                </form>
+                </div>
+                <div class="summary">
+                    <h3>Summary</h3>
+                    <p>Creative and responsible software tester with
+                    two years of experience, familiar with Python
+                    on a professional and hobby basis, always
+                    hungry for knowledge, team player. Fluently
+                    communicating in English.
+                    </p>
+                </div>
+                <div class="skills">
+                    <h3>Skills</h3>
+                    <div>
+                        <ul class="skills-list">
+                            <li>Python</li>
+                            <li>Django</li>
+                            <li>DOORS, Integrity</li>
+                            <li>Databases - SQL</li>
+                            <li>JIRA</li>
+                            <li>Agile methodology</li>
+                            <li>Microsoft tools</li>
+                            <li>Linux</li>
+                        </ul>
+                    </div>
+                </div>
+                </td>
+            <td>
+                <div class="experience">
+                    <table class="classic">
+                        <tr>
+                            <td>
+                                <h3>Experience</h3>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><b>Quality Assurance Engineer - riskmethods</b></td>
+                            <td>
+                                <p>04.2021 - now</p>
+                                <p>Manual testing, requirements analysis, process supervision</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Integration and Verification Engineer - Nokia</strong></td>
+                            <td>
+                                <p>11.2020 - 02.2021</p>
+                                <p>Cooperation on comprehensive base station tests</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Qualification Tester - ZF Automotive</strong></td>
+                            <td>
+                                <p>06.2019 - 11.2020</p>
+                                <p>Design, execution and automation of qualification tests for virtual ECU in Python</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="Education and Courses">
+                    <table class="classic">
+                        <tr>
+                            <td>
+                                <h3>Education</h3>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><strong>IT Academy</strong></td>
+                            <td>
+                                <p>Quality Assurance</p>
+                                <p>Software testing basics, Agile methodology, ISTQB preparation</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Wrocław University of environmental and life sciences</strong></td>
+                            <td>
+                                <p>Bioinformatics</p>
+                                <p>Internship at <i>Transition Technologies</i> in Warsaw - creating a plan for
+                                    the introduction of a new gene in Saccharomyces cerevisiae</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="contact">
+                    <h3>Contact Info</h3>
+                        <form>
+                            <label for="msg">Wiadomość</label>
+                            <br>
+                            <textarea id="msg" name="msg" rows="10" cols="50">Tutaj wpisz wiadomość do mnie!</textarea>
+                            <br>
+                            <input type="submit" value="Wyślij" class="send-button">
+                        </form>
+                    <p>jakub.szczechowicz@gmail.com</p>
+                    <p>+48 792 178 754</p>
+                    <p>Częstochowa 42-200</p>
+                </div>
+            </td>
+            <td></td>
+        </tr>
+    </table>
+
+
+</body>
+
+</html>

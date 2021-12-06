@@ -1,0 +1,43 @@
+.main-layout {
+    text-align: left;
+    border-bottom: solid;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+
+body {
+    background-color: #FEF5ED;
+}
+
+.header-div {
+    width: 20%;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #99A799;
+}
+
+th, td {
+    padding: 25px;
+    text-align: left;
+}
+
+.classic{
+    text-align: center;
+    font-size: large;
+    background-color: #D3E4CD;
+}
+
+.summary {
+    text-align: left;
+    width: 50%;
+}
+
+.skills {
+    text-align: left;
+}
+
+
+.classic tr:nth-child(even) {
+    background-color: #ADC2A9;
+}
