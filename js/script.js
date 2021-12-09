@@ -14,4 +14,3 @@ function bigger() {
     document.body.style.fontSize = "larger";
 }
 
-console.log(przycisk)

@@ -8,12 +8,17 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
 }
 
+.profile-picture {
+    width: 200;
+    height: 200;
+}
+
 .header-div {
     width: 20%;
     text-align: center;
 }
 
-h1, h2 {
+.header1, .header2 {
     color: #99A799;
 }
 
