@@ -26,23 +26,27 @@ html{
 
 .general {
     max-width: 1000px;
-    margin: auto;
+    margin: 0 auto;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
-    line-height: 1.4;
+    line-height: 1.8;
 }
 
 .header {
     background-color: burlywood;
+    max-width: 100%;
 }
 
 .navspace {
     background-color: cadetblue;
+    max-width: 100%;
 }
 
 .navbar {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 5px;
+    display: flex;
+    list-style: none;
+    justify-content: center;
 }
 
 .navItem {
@@ -51,7 +55,7 @@ html{
     border-radius: 15px;
     box-shadow: 0px 1px 81px -10px rgba(66, 68, 90, 1);
     text-decoration-line: none;
-    line-height: 2.7;
+    margin: 5px;
     color: black;
 }
 
@@ -94,7 +98,6 @@ html{
 }
 
 .displayMode {
-    line-height: 1.4;
     cursor: pointer;
 }
 
