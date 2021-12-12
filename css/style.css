@@ -1,48 +1,108 @@
-.main-layout {
-    text-align: left;
-    border-bottom: solid;
+html{
+    box-sizing: border-box;
 }
 
-body {
-    background-color: #FEF5ED;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+*, ::after, ::before {
+    box-sizing: inherit;
 }
 
-.profile-picture {
-    width: 200;
-    height: 200;
+.name {
+    font-size: xx-large;
 }
 
-.header-div {
-    width: 20%;
+.body {
+    background-color: rgb(253, 253, 246);
+}
+
+.darkmode {
+    background-color: rgb(27, 27, 27);
+    color: whitesmoke;
+}
+
+.profilePicture {
+    border-radius: 50%;
+    box-shadow: 0px 1px 81px -10px rgba(66, 68, 90, 1);
+}
+
+.general {
+    max-width: 1000px;
+    margin: auto;
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.4;
 }
 
-.header1, .header2 {
-    color: #99A799;
+.header {
+    background-color: burlywood;
 }
 
-th, td {
-    padding: 25px;
-    text-align: left;
+.navspace {
+    background-color: cadetblue;
 }
 
-.classic{
-    text-align: center;
-    font-size: large;
-    background-color: #D3E4CD;
+.navbar {
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-.summary {
-    text-align: left;
-    width: 50%;
+.navItem {
+    background-color: lavender;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0px 1px 81px -10px rgba(66, 68, 90, 1);
+    text-decoration-line: none;
+    line-height: 2.7;
+    color: black;
 }
 
-.skills {
-    text-align: left;
+.navItem:hover {
+    background-color: rgb(247, 247, 247);
 }
 
+.skillItem {
+    text-align: justify;
+    padding: 4px;
+}
 
-.classic tr:nth-child(even) {
-    background-color: #ADC2A9;
+#aboutMe {
+    border-bottom: 1px ridge gray;
+}
+
+.tableItem {
+    border: 1px solid rgb(255, 255, 255);
+    padding: 10px;
+}
+
+.tableItem:hover {
+    background-color: rgb(140, 176, 177);
+}
+
+.tableData {
+    background-color: rgb(110, 183, 185);
+}
+
+.tableHeader {
+    background-color: cadetblue;
+}
+
+#education, #experience, #skills {
+    padding-bottom: 100px;
+}
+
+.experienceTable, .educationTable {
+    border-collapse: collapse;
+}
+
+.displayMode {
+    line-height: 1.4;
+    cursor: pointer;
+}
+
+.skills, .experience, .education {
+    overflow-x: auto;
+}
+
+.skillHeader {
+    text-align: justify;
+    border-bottom: 2px solid grey;
 }

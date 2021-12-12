@@ -5,136 +5,167 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curriculum Vitae</title>
+    <title>Jakub Szczechowicz - About me</title>
     <link href="css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,700;1,300&display=swap"
+        rel="stylesheet">
     <script defer src="js/script.js"></script>
 </head>
 
-<body>
-    <table class="main-layout">
-        <tr>
-            <td>
-                <div class="header-div">
-                    <table>
-                        <tr>
-                            <td>
-                                <h1 class="header1">Jakub Szczechowicz</h1>
-                                <p><img class="profile-picture" src="images/1556630207078.jpeg" alt="Artystyczna śpiączka"></p>
-                                <h2 class="header2">Quality Assurance Engineer</h2>
-                            </td>
-                        </tr>
-                    </table>
-                <form>
-                    <label>Powiększ, lub pomniejsz czcionkę!</label>
-                    <br>
-                    <input type="button" value="-" class="smaller-font" onclick="smaller()">
-                    <input type="button" value="+" class="bigger-font" onclick="bigger()">
-                </form>
-                </div>
-                <div class="summary">
-                    <h3>Summary</h3>
-                    <p>Creative and responsible software tester with
+<body class="body">
+    <header class="header general">Everything you need to know</header>
+    <section class="general">
+        <div class="navspace general">
+            <nav class="navbar">
+                <a href="#aboutMe" class="navItem">About Me</a>
+                <a href="#skills" class="navItem">Skills</a>
+                <a href="#experience" class="navItem">Experience</a>
+                <a href="#education" class="navItem">Education</a>
+                <a href="#contact" class="navItem">Contact</a>
+                <p><button class="displayMode navItem">Dark Mode</button></p>
+            </nav>
+        </div>
+        <h1 class="name">Jakub Szczechowicz</h1>
+        <img class="profilePicture" src="images/1556630207078.jpeg" alt="Photo of Jakub">
+        <h2 class="job">Quality Assurance Engineer</h2>
+        <section id="aboutMe">
+            <article class="summary">
+                <h3>Summary</h3>
+                <p>
+                    Creative and responsible software tester with
                     two years of experience, familiar with Python
                     on a professional and hobby basis, always
                     hungry for knowledge, team player. Fluently
                     communicating in English.
-                    </p>
-                </div>
-                <div class="skills">
+                </p>
+            </article>
+            <article class="hobbies">
+                <h3>Hobbies</h3>
+                <p>
+                    If there's one word that defines me, it's gotta be <strong>Music</strong>.
+                    I'm a vocalist, music producer, guitarist and recently even a drummer in various bands of <em>Lower
+                        Silesia</em>.
+                    I also try to do my best when it comes to mixing stuff on my own, but there's still a bumpy road
+                    ahead🤫.
+                </p>
+            </article>
+        </section>
+        <section id="skills">
+            <table class="skillsTable general">
+                <caption>
                     <h3>Skills</h3>
-                    <div>
-                        <ul class="skills-list">
-                            <li>Python</li>
-                            <li>Django</li>
-                            <li>DOORS, Integrity</li>
-                            <li>Databases - SQL</li>
-                            <li>JIRA</li>
-                            <li>Agile methodology</li>
-                            <li>Microsoft tools</li>
-                            <li>Linux</li>
-                        </ul>
-                    </div>
-                </div>
-                </td>
-            <td>
-                <div class="experience">
-                    <table class="classic">
-                        <tr>
-                            <td>
-                                <h3>Experience</h3>
-                            </td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td><b>Quality Assurance Engineer - riskmethods</b></td>
-                            <td>
-                                <p>04.2021 - now</p>
-                                <p>Manual testing, requirements analysis, process supervision</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><strong>Integration and Verification Engineer - Nokia</strong></td>
-                            <td>
-                                <p>11.2020 - 02.2021</p>
-                                <p>Cooperation on comprehensive base station tests</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><strong>Qualification Tester - ZF Automotive</strong></td>
-                            <td>
-                                <p>06.2019 - 11.2020</p>
-                                <p>Design, execution and automation of qualification tests for virtual ECU in Python</p>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="education">
-                    <table class="classic">
-                        <tr>
-                            <td>
-                                <h3>Education</h3>
-                            </td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td><strong>IT Academy</strong></td>
-                            <td>
-                                <p>Quality Assurance</p>
-                                <p>Software testing basics, Agile methodology, ISTQB preparation</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><strong>Wrocław University of environmental and life sciences</strong></td>
-                            <td>
-                                <p>Bioinformatics</p>
-                                <p>Internship at <i>Transition Technologies</i> in Warsaw - creating a plan for
-                                    the introduction of a new gene in Saccharomyces cerevisiae</p>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <div class="contact">
-                    <h3>Contact Info</h3>
-                        <form>
-                            <label for="msg">Wiadomość</label>
-                            <br>
-                            <textarea id="msg" name="msg" rows="10" cols="50">Tutaj wpisz wiadomość do mnie!</textarea>
-                            <br>
-                            <input type="submit" value="Wyślij" class="send-button">
-                        </form>
-                    <p>jakub.szczechowicz@gmail.com</p>
-                    <p>+48 792 178 754</p>
-                    <p>Częstochowa 42-200</p>
-                </div>
-            </td>
-            <td></td>
-        </tr>
-    </table>
-
+                </caption>
+                <tr>
+                    <th class="skillHeader" scope="col">Skill</th>
+                    <th class="skillHeader" scope="col">Profficiency</th>
+                </tr>
+                <tr>
+                    <th class="skillItem" scope="row">Python</th>
+                    <td class="skillItem">⭐️⭐️⭐️⭐️</td>
+                </tr>
+                <tr>
+                    <th class="skillItem" scope="row">Django</th>
+                    <td class="skillItem">⭐️⭐️</td>
+                </tr>
+                <tr>
+                    <th class="skillItem" scope="row">DOORS, Integrity</th>
+                    <td class="skillItem">⭐️⭐️⭐️⭐️</td>
+                </tr>
+                <tr>
+                    <th class="skillItem" scope="row">Databases - SQL</th>
+                    <td class="skillItem">⭐️⭐️⭐️</td>
+                </tr>
+                <tr>
+                    <th class="skillItem" scope="row">JIRA</th>
+                    <td class="skillItem">⭐️⭐️⭐️⭐️</td>
+                </tr>
+                <tr>
+                    <th class="skillItem" scope="row">Agile methodology</th>
+                    <td class="skillItem">⭐️⭐️⭐️⭐️</td>
+                </tr>
+                <tr>
+                    <th class="skillItem" scope="row">Microsoft tools</th>
+                    <td class="skillItem">⭐️⭐️⭐️⭐️</td>
+                </tr>
+                <tr>
+                    <th class="skillItem" scope="row">Linux</th>
+                    <td class="skillItem">⭐️⭐️</td>
+                </tr>
+            </table>
+        </section>
+        <section id="experience">
+            <table class="experienceTable">
+                <caption>
+                    <h3>Experience</h3>
+                </caption>
+                <tr>
+                    <th class="tableHeader tableItem" scope="col">Position</th>
+                    <th class="tableHeader tableItem" scope="col">Company</th>
+                    <th class="tableHeader tableItem" scope="col">Period</th>
+                    <th class="tableHeader tableItem" scope="col">Description</th>
+                </tr>
+                <tr>
+                    <th class="tableHeader tableItem" scope="row">Quality Assurance Engineer</th>
+                    <td class="tableData tableItem">riskmethods</td>
+                    <td class="tableData tableItem">04.2021 - now</td>
+                    <td class="tableData tableItem">Manual testing, requirements analysis, process supervision</td>
+                </tr>
+                <tr>
+                    <th class="tableHeader tableItem" scope="row">Integration and Verification Engineer</th>
+                    <td class="tableData tableItem">Nokia</td>
+                    <td class="tableData tableItem">11.2020 - 02.2021</td>
+                    <td class="tableData tableItem">Cooperation on comprehensive base transceiver station tests</td>
+                </tr>
+                <tr>
+                    <th class="tableHeader tableItem" scope="row">Qualification Tester</th>
+                    <td class="tableData tableItem">ZF Automotive</td>
+                    <td class="tableData tableItem">06.2019 - 11.2020</td>
+                    <td class="tableData tableItem">Design, execution and automation of qualification tests for virtual
+                        ECU in Python</td>
+                </tr>
+            </table>
+        </section>
+        <section id="education">
+            <table class="educationTable">
+                <caption>
+                    <h3>Education</h3>
+                </caption>
+                <tr>
+                    <th class="tableHeader tableItem" scope="col">Institution</th>
+                    <th class="tableHeader tableItem" scope="col">Field</th>
+                    <th class="tableHeader tableItem" scope="col">What I learned</th>
+                </tr>
+                <tr>
+                    <th class="tableHeader tableItem" scope="row">IT Academy</th>
+                    <td class="tableData tableItem">Quality Assurance</td>
+                    <td class="tableData tableItem">Software testing basics, Agile methodology, ISTQB preparation</td>
+                </tr>
+                <tr>
+                    <th class="tableHeader tableItem" scope="row">Wrocław University of environmental and life sciences
+                    </th>
+                    <td class="tableData tableItem">Bioinformatics</td>
+                    <td class="tableData tableItem">Internship at <i>Transition Technologies</i> in Warsaw - creating a
+                        plan for
+                        the introduction of a new gene in Saccharomyces cerevisiae</td>
+                </tr>
+            </table>
+        </section>
+        <section id="contact">
+            <h3>Contact Info</h3>
+            <form>
+                <label for="msg">Message</label>
+                <br>
+                <textarea id="msg" name="msg" rows="10" cols="35">Leave a message here</textarea>
+                <br>
+                <input class="sendButton navItem" type="submit" value="Send Message">
+            </form>
+            <p>jakub.szczechowicz@gmail.com</p>
+            <p>+48 792 178 754</p>
+            <p>Wrocław 51-114</p>
+        </section>
+    </section>
 
 </body>
 
