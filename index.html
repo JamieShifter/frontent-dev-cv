@@ -6,7 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jakub Szczechowicz - About me</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/table.css" rel="stylesheet">
+    <link href="css/nav.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,700;1,300&display=swap"
@@ -16,22 +19,22 @@
 
 <body class="body">
     <header class="header">Everything you need to know</header>
-        <div class="navspace">
-            <nav>
-                <ul class="navbar">
-                    <li><a href="#skills" class="navItem">Skills</a></li>
-                    <li><a href="#experience" class="navItem">Experience</a></li>
-                    <li><a href="#contact" class="navItem">Contact</a></li>
-                </ul>   
-                <p><button class="displayMode navItem">Dark Mode</button></p>
-            </nav>
-        </div>
-        <section class="general">
+    <div class="navspace">
+        <nav>
+            <ul class="navspace__navbar">
+                <li><a href="#skills" class="navspace__item">Skills</a></li>
+                <li><a href="#experience" class="navspace__item">Experience</a></li>
+                <li><a href="#contact" class="navspace__item">Contact</a></li>
+            </ul>
+            <p><button class="navspace__button navspace__item js_displayMode">Dark Mode</button></p>
+        </nav>
+    </div>
+    <section class="general">
         <h1 class="name">Jakub Szczechowicz</h1>
         <img class="profilePicture" src="images/1556630207078.jpeg" alt="Photo of Jakub">
         <h2 class="job">Quality Assurance Engineer</h2>
-        <section id="aboutMe">
-            <article class="summary">
+        <section id="aboutMe" class="aboutMe">
+            <article class="article">
                 <h3>Summary</h3>
                 <p>
                     Creative and responsible software tester with
@@ -41,7 +44,7 @@
                     communicating in English.
                 </p>
             </article>
-            <article class="hobbies">
+            <article class="article">
                 <h3>Hobbies</h3>
                 <p>
                     If there's one word that defines me, it's gotta be <strong>Music</strong>.
@@ -52,105 +55,115 @@
                 </p>
             </article>
         </section>
-        <section id="skills">
-            <table class="skillsTable general">
-                <caption>
-                    <h3>Skills</h3>
-                </caption>
-                <tr>
-                    <th class="skillHeader" scope="col">Skill</th>
-                    <th class="skillHeader" scope="col">Profficiency</th>
-                </tr>
-                <tr>
-                    <th class="skillItem" scope="row">Python</th>
-                    <td class="skillItem">⭐️⭐️⭐️⭐️</td>
-                </tr>
-                <tr>
-                    <th class="skillItem" scope="row">Django</th>
-                    <td class="skillItem">⭐️⭐️</td>
-                </tr>
-                <tr>
-                    <th class="skillItem" scope="row">DOORS, Integrity</th>
-                    <td class="skillItem">⭐️⭐️⭐️⭐️</td>
-                </tr>
-                <tr>
-                    <th class="skillItem" scope="row">Databases - SQL</th>
-                    <td class="skillItem">⭐️⭐️⭐️</td>
-                </tr>
-                <tr>
-                    <th class="skillItem" scope="row">JIRA</th>
-                    <td class="skillItem">⭐️⭐️⭐️⭐️</td>
-                </tr>
-                <tr>
-                    <th class="skillItem" scope="row">Agile methodology</th>
-                    <td class="skillItem">⭐️⭐️⭐️⭐️</td>
-                </tr>
-                <tr>
-                    <th class="skillItem" scope="row">Microsoft tools</th>
-                    <td class="skillItem">⭐️⭐️⭐️⭐️</td>
-                </tr>
-                <tr>
-                    <th class="skillItem" scope="row">Linux</th>
-                    <td class="skillItem">⭐️⭐️</td>
-                </tr>
-            </table>
+        <section id="skills" class="table">
+            <div class="table__container">
+                <table class="general">
+                    <caption>
+                        <h3>Skills</h3>
+                    </caption>
+                    <tr>
+                        <th class="table__header--bottomBorder" scope="col">Skill</th>
+                        <th class="table__header--bottomBorder" scope="col">Profficiency</th>
+                    </tr>
+                    <tr>
+                        <th class="table__item--noBorder" scope="row">Python</th>
+                        <td class="table__item--noBorder">⭐️⭐️⭐️⭐️</td>
+                    </tr>
+                    <tr>
+                        <th class="table__item--noBorder" scope="row">Django</th>
+                        <td class="table__item--noBorder">⭐️⭐️</td>
+                    </tr>
+                    <tr>
+                        <th class="table__item--noBorder" scope="row">DOORS, Integrity</th>
+                        <td class="table__item--noBorder">⭐️⭐️⭐️⭐️</td>
+                    </tr>
+                    <tr>
+                        <th class="table__item--noBorder" scope="row">Databases - SQL</th>
+                        <td class="table__item--noBorder">⭐️⭐️⭐️</td>
+                    </tr>
+                    <tr>
+                        <th class="table__item--noBorder" scope="row">JIRA</th>
+                        <td class="table__item--noBorder">⭐️⭐️⭐️⭐️</td>
+                    </tr>
+                    <tr>
+                        <th class="table__item--noBorder" scope="row">Agile methodology</th>
+                        <td class="table__item--noBorder">⭐️⭐️⭐️⭐️</td>
+                    </tr>
+                    <tr>
+                        <th class="table__item--noBorder" scope="row">Microsoft tools</th>
+                        <td class="table__item--noBorder">⭐️⭐️⭐️⭐️</td>
+                    </tr>
+                    <tr>
+                        <th class="table__item--noBorder" scope="row">Linux</th>
+                        <td class="table__item--noBorder">⭐️⭐️</td>
+                    </tr>
+                </table>
+            </div>
         </section>
-        <section id="experience">
-            <table class="experienceTable">
-                <caption>
-                    <h3>Experience</h3>
-                </caption>
-                <tr>
-                    <th class="tableHeader tableItem" scope="col">Position</th>
-                    <th class="tableHeader tableItem" scope="col">Company</th>
-                    <th class="tableHeader tableItem" scope="col">Period</th>
-                    <th class="tableHeader tableItem" scope="col">Description</th>
-                </tr>
-                <tr>
-                    <th class="tableHeader tableItem" scope="row">Quality Assurance Engineer</th>
-                    <td class="tableData tableItem">riskmethods</td>
-                    <td class="tableData tableItem">04.2021 - now</td>
-                    <td class="tableData tableItem">Manual testing, requirements analysis, process supervision</td>
-                </tr>
-                <tr>
-                    <th class="tableHeader tableItem" scope="row">Integration and Verification Engineer</th>
-                    <td class="tableData tableItem">Nokia</td>
-                    <td class="tableData tableItem">11.2020 - 02.2021</td>
-                    <td class="tableData tableItem">Cooperation on comprehensive base transceiver station tests</td>
-                </tr>
-                <tr>
-                    <th class="tableHeader tableItem" scope="row">Qualification Tester</th>
-                    <td class="tableData tableItem">ZF Automotive</td>
-                    <td class="tableData tableItem">06.2019 - 11.2020</td>
-                    <td class="tableData tableItem">Design, execution and automation of qualification tests for virtual
-                        ECU in Python</td>
-                </tr>
-            </table>
+        <section id="experience" class="table">
+            <div class="table__container">
+                <table class="table--collapsed">
+                    <caption>
+                        <h3>Experience</h3>
+                    </caption>
+                    <tr>
+                        <th class="table__header table__item" scope="col">Position</th>
+                        <th class="table__header table__item" scope="col">Company</th>
+                        <th class="table__header table__item" scope="col">Period</th>
+                        <th class="table__header table__item" scope="col">Description</th>
+                    </tr>
+                    <tr>
+                        <th class="table__header table__item" scope="row">Quality Assurance Engineer</th>
+                        <td class="table__data table__item">riskmethods</td>
+                        <td class="table__data table__item">04.2021 - now</td>
+                        <td class="table__data table__item">Manual testing, requirements analysis, process supervision</td>
+                    </tr>
+                    <tr>
+                        <th class="table__header table__item" scope="row">Integration and Verification Engineer</th>
+                        <td class="table__data table__item">Nokia</td>
+                        <td class="table__data table__item">11.2020 - 02.2021</td>
+                        <td class="table__data table__item">Cooperation on comprehensive base transceiver station tests</td>
+                    </tr>
+                    <tr>
+                        <th class="table__header table__item" scope="row">Qualification Tester</th>
+                        <td class="table__data table__item">ZF Automotive</td>
+                        <td class="table__data table__item">06.2019 - 11.2020</td>
+                        <td class="table__data table__item">Design, execution and automation of qualification tests for
+                            virtual
+                            ECU in Python</td>
+                    </tr>
+                </table>
+            </div>
         </section>
-        <section id="education">
-            <table class="educationTable">
-                <caption>
-                    <h3>Education</h3>
-                </caption>
-                <tr>
-                    <th class="tableHeader tableItem" scope="col">Institution</th>
-                    <th class="tableHeader tableItem" scope="col">Field</th>
-                    <th class="tableHeader tableItem" scope="col">What I learned</th>
-                </tr>
-                <tr>
-                    <th class="tableHeader tableItem" scope="row">IT Academy</th>
-                    <td class="tableData tableItem">Quality Assurance</td>
-                    <td class="tableData tableItem">Software testing basics, Agile methodology, ISTQB preparation</td>
-                </tr>
-                <tr>
-                    <th class="tableHeader tableItem" scope="row">Wrocław University of environmental and life sciences
-                    </th>
-                    <td class="tableData tableItem">Bioinformatics</td>
-                    <td class="tableData tableItem">Internship at <i>Transition Technologies</i> in Warsaw - creating a
-                        plan for
-                        the introduction of a new gene in Saccharomyces cerevisiae</td>
-                </tr>
-            </table>
+        <section id="education" class="table">
+            <div class="table__container">
+                <table class="table--collapsed">
+                    <caption>
+                        <h3>Education</h3>
+                    </caption>
+                    <tr>
+                        <th class="table__header table__item" scope="col">Institution</th>
+                        <th class="table__header table__item" scope="col">Field</th>
+                        <th class="table__header table__item" scope="col">What I learned</th>
+                    </tr>
+                    <tr>
+                        <th class="table__header table__item" scope="row">IT Academy</th>
+                        <td class="table__data table__item">Quality Assurance</td>
+                        <td class="table__data table__item">Software testing basics, Agile methodology, ISTQB preparation
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="table__header table__item" scope="row">Wrocław University of environmental and life
+                            sciences
+                        </th>
+                        <td class="table__data table__item">Bioinformatics</td>
+                        <td class="table__data table__item">Internship at <i>Transition Technologies</i> in Warsaw -
+                            creating a
+                            plan for
+                            the introduction of a new gene in Saccharomyces cerevisiae</td>
+                    </tr>
+                </table>
+            </div>
         </section>
         <section id="contact">
             <h3>Contact Info</h3>
@@ -159,7 +172,7 @@
                 <br>
                 <textarea id="msg" name="msg" rows="10" cols="35">Leave a message here</textarea>
                 <br>
-                <input class="sendButton navItem" type="submit" value="Send Message">
+                <input class="sendButton navspace__item js_sendButton" type="submit" value="Send Message">
             </form>
             <p>jakub.szczechowicz@gmail.com</p>
             <p>+48 792 178 754</p>

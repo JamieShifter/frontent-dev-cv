@@ -1,7 +1,7 @@
 console.log("Witam!");
 
-let send = document.querySelector(".sendButton");
-let button = document.querySelector(".displayMode");
+let send = document.querySelector(".js_sendButton");
+let button = document.querySelector(".js_displayMode");
 let body = document.querySelector(".body");
 
 send.addEventListener("click", () => {
