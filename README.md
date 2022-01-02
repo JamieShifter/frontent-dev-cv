@@ -11,7 +11,7 @@ Below the main section you can find Skills table, Experience table, Education ta
 
 Here's how it should look like:
 
-![Overview](images/overview.jpg)
+![Overview](images/overview.png)
 
 ## Dark Mode button
 
@@ -19,7 +19,7 @@ If your eyes are tired but you still want to check out my CV - click Dark Mode b
 
 Here's how it should look like:
 
-![Dark mode](images/darkmode.jpg)
+![Dark mode](images/darkmode.png)
 
 ## Technologies used
 * HTML of course(BEM compliant)
